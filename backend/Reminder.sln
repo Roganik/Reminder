@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder", "Reminder\Reminder.csproj", "{314400A3-E127-4D08-AA60-BFC7AEF2F29E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{6D1423D0-6A95-47E7-ACBA-23753479BCFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Storage\Storage.csproj", "{0EF310AF-147A-440A-82EF-BE88C1214E29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{314400A3-E127-4D08-AA60-BFC7AEF2F29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{314400A3-E127-4D08-AA60-BFC7AEF2F29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{314400A3-E127-4D08-AA60-BFC7AEF2F29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1423D0-6A95-47E7-ACBA-23753479BCFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1423D0-6A95-47E7-ACBA-23753479BCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1423D0-6A95-47E7-ACBA-23753479BCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1423D0-6A95-47E7-ACBA-23753479BCFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF310AF-147A-440A-82EF-BE88C1214E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF310AF-147A-440A-82EF-BE88C1214E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF310AF-147A-440A-82EF-BE88C1214E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF310AF-147A-440A-82EF-BE88C1214E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
