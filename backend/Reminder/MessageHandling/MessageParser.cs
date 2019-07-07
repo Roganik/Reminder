@@ -8,6 +8,7 @@ namespace Reminder.MessageHandling
     {
         public ParsedMessage Parse(string text, UserTime userTime)
         {
+            var originalText = text;
             text = NormalizeText(text);
 
             var timeHelper = new DesiredTimeParser(userTime);
@@ -15,7 +16,7 @@ namespace Reminder.MessageHandling
 
             var result = new ParsedMessage()
             {
-                ReminderText = text,
+                ReminderText = originalText,
                 UserReminderTime = userReminderTime,
             };
 
