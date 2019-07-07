@@ -12,7 +12,7 @@ namespace Reminder.Jobs
         {
             _parser = new MessageParser();
         }
-        
+
         public IJob GetJob(int? userID, string messageText)
         {
             if (userID == null)
@@ -20,12 +20,17 @@ namespace Reminder.Jobs
                 return new WelcomeJob();
             }
 
-            var parsedMessage = _parser.Parse(messageText);
+            var userTimeInfo = new UserTime() //todo: get by userID
+            {
+                CurrentUserTime = DateTime.Now
+            };
+
+            var parsedMessage = _parser.Parse(messageText, userTimeInfo);
             if (parsedMessage != null)
             {
                 return new ScheduleReminderJob();
             }
-            
+
             throw new NotImplementedException("Cannot process message");
         }
     }
